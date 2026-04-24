@@ -1,0 +1,15 @@
+{
+    "name": "blender_mcp_server",
+    "version": "0.1.0",
+    "description": "MCP Server for Blender integration with OpenCode",
+    "path": "$BLENDER_PACKAGE_PATH",
+    "load_package_once": true,
+    "env": [
+        {
+            "PYTHONPATH": {
+                "value": "$BLENDER_PACKAGE_PATH/python",
+                "method": "prepend"
+            }
+        }
+    ]
+}
